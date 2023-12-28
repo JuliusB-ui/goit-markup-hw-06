@@ -352,11 +352,11 @@
                 <p class="newsletter-p">Subscribe</p>
                 <form class="newsletter-form">
                     <label class="nl-email">
-                        <input type="email" placeholder="E-mail" class="nl-input">
+                        <input type="email" placeholder="E-mail" name="subscribe" class="nl-input">
                     </label>
-                    <button type="submit">
+                    <button type="submit" class="subscribe-button">
                         Subscribe
-                        <svg height="24" weight="24" xmlns="http://www.w3.org/2000/svg">
+                        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="subscribe-icon">
                             <use href="./images/icons.svg#newsletter"/>
                         </svg>
                     </button>
@@ -371,6 +371,51 @@
                     <use href="./images/icons.svg#cross"/>
                 </svg>
             </button>
+            <p class="modal-p">Leave your contacts and we will call you back</p>
+            < class="modal-form">
+                <div class="username-div">
+                    <label class="form-label" for="user-name">Name</label>
+                    <div class="input-icon">
+                        <input id="user-name" name="user-name" type="text" class="username">
+                        <svg height="24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/icons.svg#user"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="phone-div">
+                    <label class="form-label" for="phone">Phone</label>
+                    <div class="input-icon">
+                        <input id="phone" name="phone" type="tel" class="userphone">
+                        <svg height="24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/icons.svg#phone"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="email-div">
+                    <label class="form-label" for="email">Email</label>
+                    <div class="input-icon">
+                        <input id="email" name="email" type="email" class="useremail">
+                        <svg height="24" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/icons.svg#mail"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="comment-div">
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input" class="usercomment"></textarea>
+                </div>
+                <div class="privacy-div">
+                    <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="privacy-input">
+                    <label for="user-privacy">I accept the terms and conditions of the <a href="">Privacy Policy</a>
+                        <span>
+                            <svg height="24" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/icons.svg#checked"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="form-submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
