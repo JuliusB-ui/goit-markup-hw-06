@@ -451,6 +451,55 @@ img {
   fill: var(--cloud);
 }
 
+.newsletter-p{
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.newsletter-form{
+  display : flex;
+  gap: 24px;
+}
+
+.nl-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.nl-input::placeholder{
+  color: #ffffff;
+}
+
+.subscribe-button {
+  background-color: var(--iris);
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor:pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-icon{
+  margin: 0;
+  margin-left: 16px;
+}
+
 /* MODAL */
 .backdrop {
   position: fixed;
