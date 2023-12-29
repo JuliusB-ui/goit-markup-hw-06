@@ -639,7 +639,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  padding-left: 20px;
   color: var(--light-slate);
+  position: relative;
 }
 
 .check-span {
@@ -652,6 +654,9 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  position: absolute;
+  left: 0px;
+  top: -1px;
 }
 
 .privacy-input:checked + .privacy-label .check-span{
